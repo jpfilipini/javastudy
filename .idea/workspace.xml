@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="71c80337-a287-42cf-8c37-1f64aa2b9783" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FirstJavaProject/FirstJavaProject.eml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FirstJavaProject/FirstJavaProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstJavaProject/bin/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/FirstJavaProject/bin/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstJavaProject/bin/Computador.class" beforeDir="false" afterPath="$PROJECT_DIR$/FirstJavaProject/bin/Computador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstJavaProject/bin/Embarcado.class" beforeDir="false" afterPath="$PROJECT_DIR$/FirstJavaProject/bin/Embarcado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstJavaProject/bin/Notebook.class" beforeDir="false" afterPath="$PROJECT_DIR$/FirstJavaProject/bin/Notebook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstJavaProject/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/FirstJavaProject/src/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstJavaProject/src/Computador.java" beforeDir="false" afterPath="$PROJECT_DIR$/FirstJavaProject/src/Computador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstJavaProject/src/Embarcado.java" beforeDir="false" afterPath="$PROJECT_DIR$/FirstJavaProject/src/Embarcado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstJavaProject/src/Notebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/FirstJavaProject/src/Notebook.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ZuNRdAxYZTAhnLvYVXQqJ5r8Sl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="FirstJavaProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71c80337-a287-42cf-8c37-1f64aa2b9783" name="Default Changelist" comment="" />
+      <created>1585685011850</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585685011850</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="534" y="276" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585685112877">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="534" y="276" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.768@0.0.1366.768" timestamp="1585685112877" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585743165233">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585743165233" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1585743165233">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585743165233" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1585743165233">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585743165233" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1585743165233">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585743165233" />
+    <state x="391" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1585685020435">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="391" y="211" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1585685020435" />
+  </component>
+</project>
