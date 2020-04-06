@@ -1,73 +1,152 @@
+import java.util.Scanner;
+
 public class Operacao {
 
-    private double num1,
-                   num2;
+    static Scanner input = new Scanner(System.in);
     private char operador;
 
-    public void soma() {
 
-        System.out.println(this.num1 + this.num2);
+    public int soma(int num1, int num2) {
+
+        return num1 + num2;
     }
 
-    public void subtrair() {
+    public double soma(double num1, double num2){
 
-        System.out.println(this.num1 - this.num2);
+        return num1 + num2;
     }
 
-    public void multiplicar() {
+    public int subtrair(int num1, int num2) {
 
-        System.out.println(this.num1 * this.num2);
+        return num1 - num2;
     }
 
-    public void dividir() {
+    public double subtrair(double num1, double num2) {
 
-        System.out.println(this.num1 / this.num2);
+        return num1 - num2;
     }
 
-    public double getNum1() {
+    public int multiplicar(int num1, int num2) {
 
+        return num1 * num2;
+    }
+
+    public double multiplicar(double num1, double num2) {
+
+        return num1 * num2;
+    }
+
+    public int dividir(int num1, int num2) {
+
+        return num1 / num2;
+    }
+
+    public double dividir(double num1, double num2) {
+
+        return num1 / num2;
+    }
+
+    static int getNum1(int num1) {
+
+        System.out.println("Digite o Primeiro Número: ");
+         num1 = input.nextInt();
         return num1;
     }
 
-    public double getNum2() {
+    static double getNum1(double num1) {
 
+        System.out.println("Digite o Primeiro Número: ");
+        num1 = input.nextInt();
+        return num1;
+    }
+
+    static int getNum2(int num1) {
+
+        System.out.println("Digite o Segundo Número: ");
+        int num2 = input.nextInt();
         return num2;
     }
 
-    public char getOperador() {
+    static double getNum2(double num1) {
+
+        System.out.println("Digite o Segundo Número: ");
+        int num2 = input.nextInt();
+        return num2;
+    }
+
+
+    static char getOperador() {
+
+        System.out.println("Digite o Operador: + - * / ");
+
+        char operador = input.next().charAt(0);
+
+        switch (operador) { // Start of Switch
+            case '+':
+
+                break;
+            case '-':
+
+                break;
+            case '*':
+
+                break;
+            case '/':
+
+                break;
+            default:
+                System.out.println("Illegal Operation");
+
+        }
+
         return operador;
     }
 
-    public void setNum1(double num1) {
-        this.num1 = num1;
-    }
+    public void setNum1(int num1) { }
 
-    public void setNum2(double num2) {
-
-        this.num2 = num2;
-    }
+    public void setNum2(int num2) { }
 
     public void setOperador(char operador) {
 
         this.operador = operador;
     }
 
-    public Operacao(double num1, double num2, char operador) {
-        this.num1 = num1;
-        this.num2 = num2;
+    public int calcular(int num1, int num2, char operador) {
+
         this.operador = operador;
+        int result = 0;
 
         if (operador == '+') {
-            this.soma();
+            return soma(num1, num2);
         } else if (operador == '-') {
-            this.subtrair();
+            return subtrair(num1, num2);
         } else if (operador == '*') {
-            this.multiplicar();
+            return multiplicar(num1, num2);
         } else if (operador == '/') {
-            this.dividir();
+            return dividir(num1, num2);
         }
+
+        return result;
+    }
+
+    public double calcular(double num1, double num2, char operador) {
+
+        this.operador = operador;
+        double result = 0;
+
+        if (operador == '+') {
+            this.soma(num1, num2);
+        } else if (operador == '-') {
+            this.subtrair(num1, num2);
+        } else if (operador == '*') {
+            this.multiplicar(num1, num2);
+        } else if (operador == '/') {
+            this.dividir(num1, num2);
+        }
+
+        return result;
+
     }
 
 }
-
 
