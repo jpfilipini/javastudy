@@ -46,12 +46,13 @@ public class Operacao {
         return num1 / num2;
     }
 
-    static int getNum1(int num1) {
+    static int getNum1(int intnum1) {
 
         System.out.println("Digite o Primeiro Número: ");
-         num1 = input.nextInt();
-        return num1;
+        intnum1 = input.nextInt();
+        return intnum1;
     }
+
 
     static double getNum1(double num1) {
 
@@ -60,12 +61,15 @@ public class Operacao {
         return num1;
     }
 
-    static int getNum2(int num1) {
+
+    static int getNum2() {
 
         System.out.println("Digite o Segundo Número: ");
         int num2 = input.nextInt();
         return num2;
     }
+
+
 
     static double getNum2(double num1) {
 
@@ -129,6 +133,7 @@ public class Operacao {
         return result;
     }
 
+
     public double calcular(double num1, double num2, char operador) {
 
         this.operador = operador;
@@ -145,8 +150,10 @@ public class Operacao {
         }
 
         return result;
-
     }
-
 }
+
+
+
+
 
