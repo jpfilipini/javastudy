@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bef082d-5c7c-4e57-8545-d737c4e42cf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Directory/Dados.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaIO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaIO/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="4bef082d-5c7c-4e57-8545-d737c4e42cf0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,10 +89,14 @@
     </state>
     <state width="1323" height="196" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1587739679573" />
     <state width="1323" height="196" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1587752302183" />
-    <state x="391" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1587751264847">
+    <state x="391" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1587996593105">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="391" y="211" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.0.1920.1080@0.0.1366.768" timestamp="1587734832135" />
-    <state x="391" y="211" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1587751264847" />
+    <state x="391" y="211" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1587996593105" />
+    <state x="65" y="10" key="new project wizard" timestamp="1587996609661">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="65" y="10" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1587996609661" />
   </component>
 </project>
