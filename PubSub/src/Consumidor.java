@@ -3,34 +3,36 @@ import java.util.*;
 public class Consumidor implements Runnable {
 
     static List<String> fruitList = new ArrayList<String>();
+    boolean flag = true;
 
-    public Consumidor(List<String> fruitList){
+    public Consumidor(List<String> fruitList) {
 
         this.fruitList = fruitList;
+        flag = true;
 
     }
 
     public void ConsumeData() throws InterruptedException {
-        System.out.println("Consumindo a lista");
-        synchronized (fruitList){
-        fruitList.clear();
-        if(fruitList.isEmpty()){
-            System.out.println("Lista Consumida");
+        while (fruitList.size() == 10) {
+            System.out.println("Consumindo a lista");
+            fruitList.clear();
         }
-        else{
-            System.out.println(fruitList.size());
-        }}
-
+        System.out.println("Lista Consumida");
     }
 
-    public void run() {
-        try{
+
+    public synchronized void run() {
+        while(true)
+        try {
             Thread.sleep(500);
-            while(fruitList.size() == 10)
+            {
                 ConsumeData();
-        } catch (Exception e) {
+                wait();
+            }
+        } catch (InterruptedException e) {
             e.printStackTrace();
+        notifyAll();
         }
-        fruitList.notify();
     }
 }
+

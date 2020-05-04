@@ -3,13 +3,13 @@ import java.util.*;
 public class Produtor implements Runnable {
 
     static List<String> fruitList = new ArrayList<String>();
-    static int i = 0;
 
     public Produtor(List<String> fruitList){
 
         this.fruitList = fruitList;
 
     }
+
 
     public void ProduceData() throws InterruptedException {
 
@@ -27,26 +27,27 @@ public class Produtor implements Runnable {
         fruitList.add("Carambola");
 
         int n = fruitList.size();
-        while (true) {
-            synchronized (fruitList){
-            for (int k = 0; k < n; k++) {
-                System.out.println("Posicao: " + k + "  " + fruitList.get(k));
-                i++;
-            }
-            System.out.println("Lista Cheia");
-            fruitList.wait();
-        }}
-    }
+                try{
+                    for (int k = 0; k < n; k++) {
+                        System.out.println("Posicao: " + k + "  " + fruitList.get(k));
+                    }
+                }catch(Exception e){
+                    e.printStackTrace();
+                }
+            System.out.println("Lista Cheia");}
 
     @Override
     public synchronized void run() {
-        while(i < 10) {
+        while(true){
+        if (fruitList.size() < 10) {
             try {
                 ProduceData();
+                wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            fruitList.notify();
+        }notifyAll();
         }
     }
 }
+

@@ -14,6 +14,5 @@ public class Main {
         Thread t2 = new Thread(consumeThread);
         t2.start();
 
-
     }
 }
