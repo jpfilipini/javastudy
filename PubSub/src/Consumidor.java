@@ -8,30 +8,34 @@ public class Consumidor implements Runnable {
     public Consumidor(List<String> fruitList) {
 
         this.fruitList = fruitList;
-        flag = true;
 
     }
 
     public void ConsumeData() throws InterruptedException {
-        while (fruitList.size() == 10) {
+
+        synchronized (fruitList){
+            while(fruitList.isEmpty()){
+                System.out.println("Lista Vazia");
+                fruitList.wait();
+            }
+
+
+        Thread.sleep(1000);
+        if (fruitList.size() == 10) {
             System.out.println("Consumindo a lista");
             fruitList.clear();
         }
         System.out.println("Lista Consumida");
-    }
+        fruitList.notifyAll();
+    }}
 
 
     public synchronized void run() {
         while(true)
         try {
-            Thread.sleep(500);
-            {
                 ConsumeData();
-                wait();
-            }
         } catch (InterruptedException e) {
             e.printStackTrace();
-        notifyAll();
         }
     }
 }

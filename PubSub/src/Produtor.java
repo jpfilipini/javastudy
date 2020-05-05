@@ -4,6 +4,7 @@ public class Produtor implements Runnable {
 
     static List<String> fruitList = new ArrayList<String>();
 
+
     public Produtor(List<String> fruitList){
 
         this.fruitList = fruitList;
@@ -11,8 +12,16 @@ public class Produtor implements Runnable {
     }
 
 
-    public void ProduceData() throws InterruptedException {
+    public void ProduceData(int i) throws InterruptedException {
 
+        synchronized (fruitList){
+            while(fruitList.size() == 10){
+                System.out.println("Lista Cheia");
+                fruitList.wait();
+            }
+
+
+        Thread.sleep(1000);
         System.out.println("Inserindo strings na lista: ");
 
         fruitList.add("Laranja");
@@ -34,20 +43,23 @@ public class Produtor implements Runnable {
                 }catch(Exception e){
                     e.printStackTrace();
                 }
-            System.out.println("Lista Cheia");}
+            System.out.println("Lista Cheia");
+            fruitList.notifyAll();
+        }
+    }
 
     @Override
     public synchronized void run() {
+
+        int counter = 1;
         while(true){
-        if (fruitList.size() < 10) {
             try {
-                ProduceData();
-                wait();
+                ProduceData(counter++);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }notifyAll();
         }
-    }
+        }
+
 }
 
